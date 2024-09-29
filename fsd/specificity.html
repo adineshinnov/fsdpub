@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Demo</title>
+    <style>
+        /* Type selector (low specificity) */
+        p {
+            color: blue;  /* This will apply unless overridden by a more specific rule */
+        }
+
+        /* Class selector (higher specificity than type selector) */
+        .important {
+            color: green; /* This will override the type selector if applied */
+        }
+
+        /* ID selector (higher specificity than class and type selectors) */
+        #special {
+            color: red;   /* This will override both class and type selectors */
+        }
+
+        /* Inline styles (highest specificity) */
+        /* This is not set in the <style> tag but directly in the HTML as an attribute */
+    </style>
+</head>
+<body>
+
+    <h2>CSS Specificity Demo</h2>
+
+    <!-- Paragraph with type selector (color: blue) -->
+    <p>This is a regular paragraph. It will be blue.</p>
+
+    <!-- Paragraph with class selector (color: green) -->
+    <p class="important">This paragraph has a class applied. It will be green.</p>
+
+    <!-- Paragraph with ID selector (color: red) -->
+    <p id="special" class="important">This paragraph has both an ID and a class. It will be red.</p>
+
+    <!-- Paragraph with inline style (highest specificity, color: orange) -->
+    <p style="color: orange;">This paragraph has inline style. It will be orange.</p>
+
+</body>
+</html>
