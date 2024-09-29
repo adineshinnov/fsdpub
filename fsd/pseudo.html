@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Range Styling</title>
+    <style>
+      /* Style for input when value is out of range */
+      input[type="number"]:out-of-range {
+        border: 2px solid red;
+        background-color: #ffcccc;
+        color: red;
+      }
+
+      /* Style for input when value is within the range */
+      input[type="number"]:in-range {
+        border: 2px solid green;
+        background-color: #ccffcc;
+        color: green;
+      }
+
+      /* Style for input when invalid email */
+      input[type="email"]:invalid {
+        border: 2px solid red;
+      }
+
+      input[type="email"]::placeholder {
+        
+        color: blue;
+      }
+      
+      p::first-line
+      {
+        text-decoration: underline;
+      }
+      p::first-letter
+      {
+        font-size: 20px;
+        color: red;
+      }
+      P::before
+      {
+        content: "KLU";
+      }
+      P::after
+      {
+        content: "END";
+      }
+      P::selection
+      {
+        background-color: aquamarine;
+        color:blue;
+      }
+
+       /* Style for list item markers (bullets) */
+       ul li::marker {
+            color: red;      /* Change bullet color to red */
+            font-size: 20px; /* Make the bullet larger */
+        }
+
+        /* Style the text of the list items separately */
+        ul li {
+            font-size: 16px;
+            color: black;
+        }
+
+        .custom-list {
+            list-style-type: none;   /* Default round bullet */
+           
+        }
+
+        /* Styling for list item text within the 'custom-list' */
+        .custom-list li::before {
+            content: "\2213";
+            color: red;            /* Text color of list items */
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Input Range Example</h2>
+    <p>Enter a number between 10 and 20:</p>
+
+    <!-- Input with type number and min/max range -->
+    <input
+      type="number"
+      min="10"
+      max="20"
+      placeholder="Enter a number"
+      style="width: 400px; height: 50px; font-size: 20px; padding: 10px"
+    />
+    <br />
+    <br />
+    <input type="email" min="10" max="20" placeholder="Enter the Email" />
+    <br />
+    <br />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+      molestias, aspernatur qui esse ut laboriosam dicta, assumenda accusantium
+      enim ea placeat consectetur eum quae amet illo? Tempore nemo nam
+      cupiditate corrupti impedit suscipit, dolorum dolor illum blanditiis vero
+      in laborum. Earum ducimus nulla consequuntur, sit tempore temporibus
+      voluptates, ipsum doloremque labore error est tenetur nobis quibusdam
+      blanditiis perspiciatis, velit totam? Voluptatum inventore libero quae eum
+      alias, eius veritatis adipisci. Eos ipsa tempora doloremque odio natus,
+      facere delectus corrupti asperiores placeat similique aliquam? In ducimus
+      possimus, sed consectetur a enim officiis? Eius amet debitis officia sit,
+      architecto optio rem blanditiis reprehenderit delectus sed numquam
+      accusamus assumenda, cum commodi voluptatum, at maxime cumque facere natus
+      autem. Qui iure consectetur quod minus dicta magnam sint voluptas nisi
+      nulla animi? Doloribus enim voluptatum pariatur! Odio, sed maiores,
+      similique quod quibusdam doloremque eveniet incidunt non dicta molestias
+      nostrum ea, in tenetur architecto est velit eius. Autem, fugit dicta!
+      Neque, possimus velit rem tenetur fuga doloremque beatae! Praesentium
+      exercitationem culpa aliquid ullam repudiandae eius velit recusandae
+      ducimus est magni molestiae in repellat obcaecati aperiam pariatur,
+      explicabo soluta expedita, similique nulla accusamus omnis doloremque!
+      Eaque et hic dolore esse saepe optio cum aspernatur aperiam, aut quae,
+      obcaecati asperiores illum eos deserunt doloribus. Molestiae nemo
+      repellendus eveniet qui eius reiciendis iusto numquam. Sunt eveniet,
+      necessitatibus sed officiis facere numquam animi quam nihil voluptates
+      accusantium exercitationem porro labore hic, quo sint ad. Officiis
+      laboriosam nam illum saepe quisquam, possimus praesentium aliquid fugit ut
+      provident nobis. Repellendus praesentium neque ex omnis reprehenderit
+      illum officia sint totam labore vitae minus, maiores quos consequatur,
+      inventore nisi, quia numquam. Nisi ea quos eius expedita distinctio? Odit
+      repellendus obcaecati assumenda, cupiditate similique, suscipit, voluptas
+      a deserunt voluptate numquam nobis eaque sint consequatur eveniet! Autem
+      distinctio debitis pariatur dolores ipsam! Exercitationem corrupti, nulla
+      praesentium dolor commodi maxime error repellendus? Distinctio tempore
+      facere itaque corrupti labore odio rerum dolore illum nobis culpa voluptas
+      reiciendis fugiat voluptate sit, nostrum vero impedit esse sequi
+      asperiores repudiandae voluptatibus nemo. Qui maxime eveniet, ipsum itaque
+      velit esse? Aspernatur dolorum, vitae commodi iure in blanditiis labore
+      perspiciatis deleniti consequatur, incidunt inventore impedit facere
+      corrupti provident cumque ad quisquam placeat amet omnis voluptate ipsum
+      quam. Quis sunt magni facilis at enim, aut vero hic harum, doloribus eum
+      unde in velit repellendus animi doloremque officiis nesciunt odio
+      reprehenderit vel, voluptatibus consequuntur. Dolor eveniet pariatur
+      voluptas, aliquam rerum temporibus, accusantium distinctio sunt nesciunt
+      veniam sed, porro ullam saepe iusto optio libero obcaecati cumque
+      voluptate ut quia commodi aperiam facilis. Omnis assumenda ratione
+      accusantium! Veniam quos eaque aliquid eligendi sunt obcaecati soluta ad,
+      neque, recusandae ratione assumenda atque tenetur minima. Quos facere
+      laudantium consequuntur in dignissimos iusto nulla odio quidem
+      necessitatibus nam, est quo animi delectus architecto accusamus
+      laboriosam. Ullam rerum assumenda dolor optio ad! Maiores, veniam culpa
+      beatae vero inventore aspernatur nesciunt sequi vitae distinctio
+      excepturi. Quasi cum ratione laudantium assumenda, dignissimos totam modi
+      reprehenderit, optio explicabo rerum, sequi inventore praesentium nihil
+      excepturi delectus pariatur corrupti. Qui soluta, minus voluptate sequi
+      corrupti voluptatem alias?
+    </p>
+
+    <h2>Shopping List</h2>
+    
+    <!-- Unordered list -->
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Butter</li>
+    </ul>
+
+    <!-- Unordered list with class 'custom-list' -->
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+  </body>
+</html>
